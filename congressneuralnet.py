@@ -1,18 +1,23 @@
 import tensorflow as tf
 import numpy as np
 import random
+# class District:
+#     def __init__(self, perimeter, area):
+#         self.perimeter =
 #constructing data
-def Schwartzberg(district):
-    return score
-def Polsby Popper(district):
-    return score
-def Reock(district):
-    return score
-def Convex Hull(district):
-    return score
-def Harris(district):
-    return score
 
+#Gathering Data
+district_data = json.load(open('stats.json'))
+district_dataset= []
+for district in data
+    stats = []
+    stats.append(district["State"])
+    stats.append(district["NAMELSAD"])
+    stats.append(district["Polsby-Popper"]/100)
+    stats.append(district["Schwartzberg"]/100)
+    stats.append(district["Area/Convex Hull"]/100)
+    stats.append(district["Reock"]/100)
+    district_dataset.append(stats)
 
 hyper_param_one = .5
 X = tf.placeholder(dtype = tf.float32, shape = [None, 5])
